@@ -1,0 +1,10 @@
+php_value auto_prepend_file "C:\xampp\htdocs\avenger\config.php"
+
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+   
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [NC,L]
+</IfModule>

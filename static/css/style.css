@@ -1,0 +1,162 @@
+
+/* Navbar Styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57;
+}
+
+/* Mobile navbar toggle button */
+.navbar-toggler {
+    border-color: #ffdd57;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 221, 87, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+
+.component-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    border: 1px dashed #ccc;
+    padding: 10px;
+}
+
+.component {
+    width: 300px;
+    min-width: 300px;
+    cursor: move;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.draggable {
+    opacity: 0.5;
+}
+
+.dropzone {
+    border: 2px dashed #007bff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.navbar-brand img {
+    height: 30px;
+    /* Set height for logo */
+}
+
+.btn-success {
+    background-color: #0d6efd;
+}
+ /* Footer Styling */
+ footer {
+  
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffb74d;
+}
+
+footer .footer-nav a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer .footer-nav a:hover {
+    color: #ffb74d;
+}
+
+footer .social-icons a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ffb74d;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 20px;
+}
+/* // login */
+.login-container {
+    margin-top: 100px;
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+    height: 30px;
+}
+.login-btn {
+    width: 150px;
+    transition: transform 0.3s ease;
+    margin-top: 15px;
+}
+
+.login-btn:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+.login-container {
+
+}
+/* end login styles */
+
