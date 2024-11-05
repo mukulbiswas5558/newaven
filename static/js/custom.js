@@ -262,7 +262,7 @@ $('#loginForm').on('submit', function(event) {
                         icon: 'success',
                         title: 'Login Successful',
                         text: 'Redirecting...',
-                        timer: 100,
+                        timer: 1000,
                         showConfirmButton: false
                     }).then(() => {
                         window.location.href = DASHBOARD_URL; // Redirect to dashboard

@@ -1,0 +1,44 @@
+$(document).ready(function () {
+    $('#submitBtn').on('click', function (event) {
+        event.preventDefault(); // Prevent form submission for validation
+
+        // Clear previous validation errors
+        $('.form-control').removeClass('is-invalid');
+        $('.invalid-feedback').remove();
+
+            // Serialize form data
+            const formData = $('#dataForm').serializeArray();
+
+            // Get the HTML content inside #components div
+            const componentsHTML = $('#components').children().map(function() {
+                const heading = $(this).find('input[name*="[heading]"]').val(); // Get heading input value
+                const content = $(this).find('textarea[name*="[content]"]').val(); // Get content textarea value
+    
+                // Convert heading and content into HTML structure
+                return `<div class="component">
+                            <h2>${heading}</h2>
+                            <p>${content}</p>
+                        </div>`;
+            }).get().join(''); // Join the array into a single string
+
+
+            components having many html element .only heading and content change do not change other html content 
+
+
+
+
+            
+
+        
+            <div class="component card p-3 mb-3 border component-card-0" data-index="0" draggable="true">
+              <h5>Card #1</h5>
+                <h2>card 1</h2>
+                <p>get</p>
+            </div>
+        
+            <div class="component card p-3 mb-3 border component-card-1" data-index="1" draggable="true">
+              <h5>Card #2</h5>
+                <h2>card 2</h2>
+                <p>getb2</p>
+            </div>
+        
